@@ -6,6 +6,8 @@ const forcast = require('./utils/forcast')
 const { resolveSoa } = require('dns')
 
 const app = express()
+const port = process.env.PORT || 3000
+
 const publicDirectoryPath = path.join(__dirname, '../public')
 const viewpath = path.join(__dirname,'../templates/views')
 const partialspath  = path.join(__dirname,'../templates/partials')
